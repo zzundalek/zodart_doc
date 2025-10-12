@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: Errors and localization
+title: 🚧 Errors and localization
 desctiption: Customizing errors messages and localization
 keywords:
   - error
@@ -15,14 +15,14 @@ last_update:
 
 ## Localization
 
-TODO
+### 🚧 Add description
 
 - Default language is set to English, to change it use `ZLocalizationContext.current`
 - ZodArt contains various helpers for error handling, see [documentation for more info](https://pub.dev/documentation/zodart/latest/zodart/)
 
 ## Custom error handling
 
-TODO
+### 🚧 Add description
 
 ## Example
 

@@ -1,7 +1,7 @@
 ---
 slug: /
 sidebar_position: 1
-title: ZodArt introduction
+title: 🎯 ZodArt introduction
 desctiption: Introduction to ZodArt package
 keywords:
   - introduction
@@ -13,9 +13,10 @@ last_update:
   author: Zbynek Zundalek
 ---
 
-This is the official documentation for [ZodArt - Schema validation package with static type inference and a parse-first design for Dart and Flutter](https://pub.dev/packages/zodart).
+[ZodArt](https://pub.dev/packages/zodart) is a type-safe, parse-first schema validation package with static type inference for Dart and Flutter.
 
-With ZodArt you can parse unstructured data from APIs, Flutter forms, config files, and more — with type safety and static type inference. ZodArt provides a powerful, expressive API to define validation schemas and parse unknown data into strongly typed Dart values.
+Parse unstructured data from APIs, Flutter forms, config files, and more — with type safety and static type inference.
+ZodArt provides a powerful and expressive API to define validation schemas and parse unknown data into strongly typed Dart values.
 
 ## Features
 
@@ -31,4 +32,10 @@ With ZodArt you can parse unstructured data from APIs, Flutter forms, config fil
 - 💬 Rich, localizable, developer-friendly error messages
 - 🌐 Designed for use with REST APIs, GraphQL, JSON files, and form input
 
-You can check the planned features and report bugs or feature requests by opening an issue on the [GitHub page](https://github.com/zzundalek/zodart/issues).
+## Comparison
+
+| ❌ Without ZodArt                          | ✅ With Zodart                  |
+| ------------------------------------------ | ------------------------------- |
+| ![Without ZodArt](img/without_zodart.jpeg) | ![With ZodArt](img/zodart.jpeg) |
+
+You can check the planned features and report bugs or request features by opening an issue on the [GitHub page](https://github.com/zzundalek/zodart/issues).

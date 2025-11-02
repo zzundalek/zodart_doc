@@ -12,6 +12,4 @@ last_update:
   author: Zbynek Zundalek
 ---
 
-## 🚧 Add description
-
 See [changelog](https://pub.dev/packages/zodart/changelog).

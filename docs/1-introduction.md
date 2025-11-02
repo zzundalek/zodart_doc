@@ -1,7 +1,7 @@
 ---
 slug: /
 sidebar_position: 1
-title: 🎯 ZodArt introduction
+title: ZodArt introduction
 desctiption: Introduction to ZodArt package
 keywords:
   - introduction
@@ -34,8 +34,8 @@ ZodArt provides a powerful and expressive API to define validation schemas and p
 
 ## Comparison
 
-| ❌ Without ZodArt                          | ✅ With Zodart                  |
-| ------------------------------------------ | ------------------------------- |
-| ![Without ZodArt](img/without_zodart.jpeg) | ![With ZodArt](img/zodart.jpeg) |
+| ❌ Without ZodArt                          | ✅ With Zodart                       |
+| ------------------------------------------ | ------------------------------------ |
+| ![Without ZodArt](img/without_zodart.jpeg) | ![With ZodArt](img/with_zodart.jpeg) |
 
 You can check the planned features and report bugs or request features by opening an issue on the [GitHub page](https://github.com/zzundalek/zodart/issues).

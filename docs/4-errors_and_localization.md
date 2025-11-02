@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: 🚧 Errors and localization
+title: Errors and localization
 desctiption: Customizing errors messages and localization
 keywords:
   - error
@@ -15,14 +15,18 @@ last_update:
 
 ## Localization
 
-### 🚧 Add description
+ZodArt provides various localized error messages for build in parsing and validations.
+Default language is set to English, to change it use `ZLocalizationContext.current`
 
-- Default language is set to English, to change it use `ZLocalizationContext.current`
-- ZodArt contains various helpers for error handling, see [documentation for more info](https://pub.dev/documentation/zodart/latest/zodart/)
+Currently supported languages are:
+
+- English
+- Czech
+- Japanese
 
 ## Custom error handling
 
-### 🚧 Add description
+ZodArt contains various helpers for error handling, see [documentation for more info](https://pub.dev/documentation/zodart/latest/zodart/)
 
 ## Example
 

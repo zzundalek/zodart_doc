@@ -42,7 +42,6 @@ const config: Config = {
       'classic',
       {
         docs: {
-          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
         },
         blog: false,
@@ -55,7 +54,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/zodart_social_card.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -63,9 +62,15 @@ const config: Config = {
       title: 'ZodArt',
       logo: {
         alt: 'ZodArt Logo',
-        src: 'img/logo.svg',
+        src: 'img/zodart_small.png',
       },
       items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Docs',
+        },
         {
           href: 'https://github.com/zzundalek/zodart',
           label: 'GitHub',

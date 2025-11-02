@@ -10,7 +10,7 @@ last_update:
   author: Zbynek Zundalek
 ---
 
-> ⚠️ Don't forget to change the `<FILE_NAME>` to your file name and run `dart run build_runner build`.
+> ❗️ Don't forget to change the `<FILE_NAME>` to your file name and run `dart run build_runner build`.
 
 ```dart
 import 'package:zodart/zodart.dart';

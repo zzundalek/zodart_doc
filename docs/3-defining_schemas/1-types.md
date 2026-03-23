@@ -6,7 +6,7 @@ keywords:
   - type
   - types
 last_update:
-  date: 10/6/2025
+  date: 3/23/2026
   author: Zbynek Zundalek
 ---
 
@@ -166,7 +166,59 @@ Type transformations:
 
 ```dart
 ZArray(ZString()).toStr((vals) => vals.join(','));
+ZArray(ZDouble()).map((e) => e.toStringAsFixed(3));
 ZArray(ZInt()).toArray(myIntsToStrings); // Change the type from List<int> to List<String>
+```
+
+## Enums
+
+Corresponds to the Dart `Enumerated` type.
+
+### Simple enums
+
+Dart enumerated type without any custom fields.
+
+```dart
+enum Color { red, green, blue }
+
+ZEnum.simple(enumValues: Color.values);
+```
+
+Nullable / optional:
+
+```dart
+ZEnum.simple(...).nullable();
+ZEnum.simple(...).optional();
+```
+
+### Enhanced enums
+
+Dart also allows enum declarations to declare classes with fields, methods etc.
+To use enhanced enums with ZodArt, you must provide a custom parsing function.
+
+```dart
+enum Status {
+  success('SUCCESS'),
+  failure('FAILURE');
+
+  const Status(this.code);
+  final String code;
+}
+
+Status? parseStatus(Object? val) => switch (val) {
+  final Status status => status,
+  final String code => Status.values.firstWhereOrNull((status) => status.code == code),
+  _ => null,
+};
+
+ZEnum.withCustomParser(parseStatus);
+```
+
+Nullable / optional:
+
+```dart
+ZEnum.withCustomParser(...).nullable();
+ZEnum.withCustomParser(...).optional();
 ```
 
 ## Complex objects

@@ -6,7 +6,7 @@ keywords:
   - parse
   - parsing
 last_update:
-  date: 10/6/2025
+  date: 3/23/2026
   author: Zbynek Zundalek
 ---
 
@@ -22,6 +22,9 @@ The only exception is **ZObject**, which accepts only `Map<String, dynamic>` as 
 | ZBool            | ❌     | ✅     | ❌         | ❌       | ❌    | ❌                     | ❌       | ❌       |
 | ZDateTime        | ❌     | ❌     | ✅         | ❌       | ❌    | ❌                     | ❌       | ❌       |
 | ZDouble          | ❌     | ❌     | ❌         | ✅       | ❌    | ❌                     | ❌       | ❌       |
+| ZEnum            | ❌     | ❌     | ❌         | ❌       | ❌    | ❌                     | ✅       | ✅\*     |
 | ZInt             | ❌     | ❌     | ❌         | ❌       | ✅    | ❌                     | ❌       | ❌       |
 | ZObject          | ❌     | ❌     | ❌         | ❌       | ❌    | ✅                     | ❌       | ❌       |
 | ZString          | ❌     | ❌     | ❌         | ❌       | ❌    | ❌                     | ✅       | ❌       |
+
+\* Can accept `Enum` values when using a custom parser.
